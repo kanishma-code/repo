@@ -6,7 +6,6 @@ import { expect } from '@wdio/globals';
 class InventoryPageExpectations {
     static async expectBikeLightInfoMatches() {
         await expect(inventoryPagePO.BikeLightLabel).toHaveText(expect.stringContaining('Sauce Labs Bike Light'))
-        // await expect(bikeLightInfoPagePO.BikeLightDescription).toHaveText(expect.stringContaining('3 lighting modes, 1 AAA battery included.'))
         await browser.pause(WaitTimes.SHORT)
     }
 
